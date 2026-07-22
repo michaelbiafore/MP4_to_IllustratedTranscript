@@ -22,10 +22,13 @@ Supported sources: **YouTube**, **Substack**, **generic web articles**, **local 
 - [Prerequisites](#prerequisites)
 - [The Pipeline at a Glance](#the-pipeline-at-a-glance)
 - [Slash Commands](#slash-commands)
+  - [Collation commands (MP4 / PDF → transcript + deck) — start here](#collation-commands-mp4--pdf--transcript--deck--start-here)
+    - [`/MP4+FasterWhisp` — one argument, fully automated (recommended)](#mp4fasterwhisp--one-argument-fully-automated-recommended)
+    - [`/MP4+WizWhisp` — bring your own transcript](#mp4wizwhisp--bring-your-own-transcript)
+    - [`/PDFSlides+WizWhisp` — a slides PDF instead of a video](#pdfslideswizwhisp--a-slides-pdf-instead-of-a-video)
   - [Fetchers — acquire a source](#fetchers--acquire-a-source)
   - [Formatters — build an illustrated transcript](#formatters--build-an-illustrated-transcript)
   - [Slidifiers — build a portable slide deck](#slidifiers--build-a-portable-slide-deck)
-  - [Collation macros — one command, both outputs](#collation-macros--one-command-both-outputs)
   - [Discord tooling](#discord-tooling)
   - [Slide & figure utilities](#slide--figure-utilities)
 - [End-to-End Examples](#end-to-end-examples)
@@ -43,7 +46,8 @@ Supported sources: **YouTube**, **Substack**, **generic web articles**, **local 
 - [uv](https://docs.astral.sh/uv/) — manages Python + dependencies automatically on first `uv run`
 - [pandoc](https://pandoc.org/installing.html) — converts formatted Markdown to HTML with a clickable TOC
 - Google Chrome / Chromium — for viewing decks and for cookie extraction (Substack, Udemy, Discord)
-- **ffmpeg** — only needed for the local-MP4 commands (`/fetch-mp4`, `/MP4+WizWhisp`, `/lecture-figs`). The YouTube commands use a bundled ffmpeg via `imageio-ffmpeg`.
+- **ffmpeg** — a *system* ffmpeg on `PATH` is only needed by `/fetch-mp4`, `/MP4+WizWhisp`, and `/lecture-figs`. The recommended `/MP4+FasterWhisp` and all YouTube commands use a **bundled** ffmpeg via `imageio-ffmpeg` — no install required.
+- **NVIDIA GPU (optional)** — `/MP4+FasterWhisp` transcribes on CUDA if it's available and falls back to CPU automatically. A GPU makes a ~2-hour video transcribe in minutes; CPU works but is slower.
 
 ```bash
 git clone <your-fork-url> Transcript2MDSlides
@@ -74,7 +78,8 @@ Every source funnels into the same three stages:
 | YouTube (with screenshots) | `/fetch-youtube` | `/format-youtube` | `/slidefy-youtube` |
 | Substack / web article | `/fetch-substack`, `/fetch-article` | `/format-transcript` | `/slidefy-transcript` |
 | Local MP4 | `/fetch-mp4` | `/format-mp4` | `/slidefy-mp4` |
-| Local MP4 + transcript | `/MP4+WizWhisp` (does format **and** slidefy) | | |
+| Local MP4 (one command, auto-transcribed) | `/MP4+FasterWhisp` (transcribe + format **and** slidefy) | | |
+| Local MP4 + your own transcript | `/MP4+WizWhisp` (does format **and** slidefy) | | |
 | Slides PDF + transcript | `/PDFSlides+WizWhisp` (format) | | `/slidefy-pdf` |
 | Udemy course | `/fetch-udemy` | `/format-transcript` | `/slidefy-transcript` |
 | Book summary | (paste/​write) | `/format-summary` | `/slidefy-transcript` |
@@ -89,7 +94,139 @@ grid with `/gridify-slides`.
 ## Slash Commands
 
 Run each inside Claude Code by typing `/` followed by the command name. `$ARGUMENTS`
-below is whatever you type after the command.
+below is whatever you type after the command. Every command reports what it wrote and where.
+
+### Collation commands (MP4 / PDF → transcript + deck) — start here
+
+These are the flagship commands: a **single run** produces *both* finished outputs — an
+illustrated formatted transcript (Markdown + portable HTML) **and** a portable slide deck —
+from one recording. The other commands (fetch / format / slidefy) are the individual stages
+you reach for when you want finer control.
+
+All three share the same **figure-curation rule**: a screenshot is kept only if it is
+*unique and informative*. Talking-heads/webcam frames, duplicates, partial reveals of a
+slide that appears more completely later, and logo/ad frames are dropped. Every kept figure
+appears in **both** the transcript and the deck, placed at the moment it's discussed.
+
+#### `/MP4+FasterWhisp` — one argument, fully automated (recommended)
+
+Give it **just a path to an MP4** (on a local drive or a `\\network\share`) and it does
+everything else: transcribe the audio, curate screenshots, and write both outputs. Nothing
+to install beyond the repo, no GPU required, no purchased app.
+
+**Syntax**
+```
+/MP4+FasterWhisp <mp4_path> [--model NAME] [--language CODE] [--device auto|cuda|cpu]
+                 [--interval SEC] [--title "..."] [--slides N] [--no-html] [--no-cleanup]
+```
+
+**What it does, step by step**
+1. **Transcribe (this command's addition).** `scripts/transcribe_mp4.py` extracts a clean
+   16 kHz mono WAV with a *bundled* ffmpeg (so odd containers like EaseUS/OBS recordings
+   decode fully), then runs **faster-whisper `large-v3-turbo`** — the same Whisper model
+   WizWhisp's "Large" setting uses — with Silero VAD. It runs on your **GPU (CUDA) if
+   available, otherwise CPU**, and writes `Input/{slug}_RAW_TRANSCRIPT.txt` (`[M:SS] text`
+   per line) as the source of truth.
+2. **Extract + dedupe frames.** Samples one frame every `--interval` seconds, then collapses
+   them to the *unique screens* with a perceptual-hash pass (a 2-hour deck of ~3,000 frames
+   typically reduces to ~100–150 candidates).
+3. **Curate.** Reviews the candidates, keeps only the interesting ones, and writes specific
+   captions.
+4. **Write the transcript.** Structured Markdown (H1/H2/H3, TOC with working anchors,
+   5-minute `*[~MM:SS]*` timestamps, blockquotes, Key Takeaways table) with every kept
+   figure placed inline, then a **portable HTML** build via pandoc (all images base64-inlined).
+5. **Build the deck.** A Naked-Presenter reveal.js deck with a slide for every kept
+   screenshot, reveal.js inlined and images base64-embedded — **no CDN, emailable**.
+
+**Options**
+
+| Option | Default | Meaning |
+|--------|---------|---------|
+| `<mp4_path>` | — | The video. Local path or UNC `\\host\share\file.mp4` (copied to a temp file first). |
+| `--model NAME` | `large-v3-turbo` | Whisper model. `large-v3` = max accuracy (slower/heavier); `medium`/`small` = faster drafts. |
+| `--language CODE` | `en` | Spoken language. `auto` to detect. |
+| `--device` | `auto` | `auto` picks CUDA if present else CPU; force with `cuda`/`cpu`. |
+| `--interval SEC` | `5` | Seconds between sampled frames. Use **`2`** for dense screen-shares/coding; `10–15` for slow slide talks. |
+| `--title "..."` | derived | Override the H1 title. |
+| `--slides N` | as needed | Target deck size; never drops a figure to hit it. |
+| `--no-html` | off | Skip the HTML transcript build (still writes Markdown). |
+| `--no-cleanup` | off | Keep the raw frame dump and contact sheets instead of offering to delete them. |
+
+**Examples**
+```
+/MP4+FasterWhisp Input/MyTalk.mp4                              # simplest: one argument
+/MP4+FasterWhisp "\\NAS\recordings\Lecture.mp4" --interval 2  # network path, dense screen-share
+/MP4+FasterWhisp Input/MyTalk.mp4 --model large-v3            # maximum transcription accuracy
+/MP4+FasterWhisp Input/MyTalk.mp4 --device cpu --model small  # quick draft on a laptop with no GPU
+```
+
+**Produces**
+```
+Output/Formatted/{Title}_FORMATTED_TRANSCRIPT.md      # structured transcript
+Output/Formatted/{Title}_FORMATTED_TRANSCRIPT.html    # portable (base64 images, emailable)
+Output/Slides/{Title}_{N}_SLIDES.html                 # portable reveal.js deck
+```
+
+**First-run notes**
+- The model (~1.6 GB) downloads from Hugging Face on first use and is cached for later runs.
+  Downloads use the classic LFS CDN by default (`HF_HUB_DISABLE_XET=1`), which gets through
+  firewalls that block HF's newer Xet transport; set `HF_HUB_DISABLE_XET=0` to re-enable Xet.
+- On a modern NVIDIA GPU a ~2-hour recording transcribes in a few minutes; on CPU expect
+  longer — use `--model small` for a fast first pass.
+
+#### `/MP4+WizWhisp` — bring your own transcript
+
+Same curation/format/slidefy pipeline as above, but **you supply the transcript** instead of
+having the command generate it. Use this when you already have a hand-made transcript (e.g.
+from the [WizWhisp/WizScribe](https://apps.microsoft.com/) desktop app) and want its exact
+wording. This variant is **Windows/platform-specific**: it uses the project `.venv` and a
+*system* ffmpeg (e.g. installed via `winget install Gyan.FFmpeg`).
+
+**Syntax**
+```
+/MP4+WizWhisp <mp4_path> [transcript_path] [--interval SEC] [--title "..."]
+              [--slides N] [--no-html] [--no-cleanup]
+```
+
+- **`transcript_path`** — a timestamped text file, one segment per line as `MM:SS  text` or
+  `HH:MM:SS text` (the shape WizWhisp exports). This is the source of truth; it is *not*
+  re-transcribed.
+- If **omitted**, the command pulls the transcript straight from WizWhisp's local SQLite
+  history DB, matching the MP4's file name.
+- `--interval` defaults to **5**; other options match `/MP4+FasterWhisp`.
+
+**Example**
+```
+/MP4+WizWhisp Input/MyTalk.mp4 Input/MyTalk_timestamped.txt
+/MP4+WizWhisp Input/MyTalk.mp4                 # pull transcript from the WizWhisp DB by filename
+```
+Produces the same three output files as `/MP4+FasterWhisp`.
+
+> **Which one?** Prefer **`/MP4+FasterWhisp`** for one-command automation, network paths, and
+> portability (no purchased app, no manual step). Use **`/MP4+WizWhisp`** only when you want a
+> specific hand-made transcript verbatim.
+
+#### `/PDFSlides+WizWhisp` — a slides PDF instead of a video
+
+The **no-video** sibling: pair a lecture's **slide-deck PDF** (authoritative figures, one
+slide per page) with a timestamped transcript to build a formatted transcript that uses
+**every slide**, placed where it's discussed. There's no frame extraction or curation — the
+slides are already clean figures.
+
+**Syntax**
+```
+/PDFSlides+WizWhisp <transcript_path> <slides_pdf_path> [--out NAME] [--title "..."]
+                    [--no-html] [--jpeg-width N]
+```
+
+- `--out NAME` — output base name (else derived from the H1 title).
+- `--jpeg-width N` — max width of the portable-HTML slide images (default **1600**).
+
+**Example**
+```
+/PDFSlides+WizWhisp Input/lecture_timestamped.txt Input/lecture_slides.pdf --out 01_CellularSheaves
+```
+Produces `Output/Formatted/{name}.{md,html}`. (For a *deck* from a PDF, use `/slidefy-pdf`.)
 
 ### Fetchers — acquire a source
 
@@ -158,10 +295,12 @@ Markdown file for the format/slidefy pipeline. Token falls back to `cookies_disc
 Produces `Input/{slug}_RAW_ARTICLE.md` + `{slug}_figs/`. See [Credential Setup](#credential-setup).
 
 #### `/perp-to-md <perplexity-url>`
-Download a Perplexity conversation thread as a single Markdown file in `Input/`.
+Download a shared Perplexity conversation thread — each question/answer turn plus its cited
+sources — as a single Markdown file in `Input/`. Then run `/format-transcript` on it.
 ```
 /perp-to-md https://www.perplexity.ai/search/some-thread-id
 ```
+Produces `Input/{slug}_RAW_ARTICLE.md`.
 
 ### Formatters — build an illustrated transcript
 
@@ -194,10 +333,13 @@ deduplicated screenshots embedded.
 Produces `Output/Formatted/{name}_FORMATTED_TRANSCRIPT.md` + HTML.
 
 #### `/format-summary <filepath>`
-Format a book-summary Markdown file into a structured document (+ HTML), with figures if present.
+Turn a raw book-summary Markdown file into a structured document (chaptered headings, TOC,
+key-idea callouts, Key Takeaways table) plus a portable HTML build, keeping any figures the
+source references. Use it for book/report summaries rather than spoken transcripts.
 ```
 /format-summary Input/Atomic_Habits_summary.md
 ```
+Produces `Output/Formatted/{name}_FORMATTED.md` + HTML.
 
 #### `/format-bytebytego <arguments>`
 Specialized, house-style formatter for a **local MP4 lecture/office-hours recording + its
@@ -244,26 +386,6 @@ assemble a self-contained deck (default **30** slides) in which every figure app
 /slidefy-pdf Input/report.pdf 40 --slug Q3Report --dpi 200
 ```
 Produces `Output/Slides/{name}_SLIDES.html`.
-
-### Collation macros — one command, both outputs
-
-#### `/MP4+WizWhisp <mp4_path> [transcript_path]`
-The end-to-end local-video command: takes a screen-recording MP4 + a `MM:SS text`
-timestamped transcript (WizWhisp/WizScribe or similar) and produces **both** a formatted
-transcript (Markdown + portable HTML) **and** a portable HTML slide deck, inserting only the
-genuinely *interesting* screenshots as figures. Platform-specific to this machine (project
-`.venv` + WinGet ffmpeg).
-```
-/MP4+WizWhisp Input/MyTalk.mp4 Input/MyTalk_timestamped.txt
-```
-
-#### `/PDFSlides+WizWhisp <transcript_path> <slides_pdf_path> [--out NAME] [--title "..."] [--no-html] [--jpeg-width N]`
-The **no-video** sibling: a slide-deck PDF (authoritative figures, one slide per page) + a
-timestamped transcript → a formatted transcript that uses *every* slide, placed where it is
-discussed. `--jpeg-width` (default 1600) controls the portable-HTML slide image size.
-```
-/PDFSlides+WizWhisp Input/lecture_timestamped.txt Input/lecture_slides.pdf --out 01_CellularSheaves
-```
 
 ### Discord tooling
 

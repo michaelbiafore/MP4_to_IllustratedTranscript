@@ -71,3 +71,7 @@ DiscordDevMode*.png
 # OS
 .DS_Store
 Thumbs.db
+
+# Personal purchase receipts / order confirmations (keep local)
+Refs/Buying WizWhisp*
+*order #*.pdf

@@ -16,4 +16,10 @@ dependencies = [
     "imageio-ffmpeg>=0.6.0",
     # PDF extraction (for /slidefy-pdf)
     "pymupdf>=1.26.0",
+    # Headless transcription (for /MP4+FasterWhisp): Whisper large-v3-turbo via CTranslate2,
+    # GPU if available else CPU int8, model auto-downloaded from Hugging Face on first run.
+    "faster-whisper>=1.1.0",
+    # Frame curation (contact sheets, pHash scene dedup) for the MP4 commands.
+    "pillow>=10.0.0",
+    "imagehash>=4.3.1",
 ]
