@@ -1,0 +1,73 @@
+# Credentials - never commit
+cookies_substack.json
+cookies_substack.txt
+cookies_*.json
+cookies_*.txt
+cookie_*.json
+cookie_*.txt
+substack_coo*.json
+*_cookies.json
+*_cookies.txt
+# Backup copies of credential files (e.g. cookies_substack.json.bak, .bak2)
+cookies_*.bak
+cookies_*.bak[0-9]*
+*.cookies.bak
+*.cookies.bak[0-9]*
+# Discord auth dumps and similar one-off credential captures
+*Discord_Auth*
+*Auth_and_Channel_ID*
+qs-atlas_Discord_Auth_and_Channel_ID.txt
+# Proxy / rotator configs may contain hostnames + credentials
+*proxy-rotator*
+Refs/proxy-rotator.zip
+# Generic secret/credential files
+*.env
+*.env.*
+secrets.*
+*secret*.json
+*secret*.txt
+*credentials*.json
+*credentials*.txt
+*.pem
+*.key
+*.p12
+*.pfx
+.envrc
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Content directories (large files, not needed in repo)
+Input/
+Output/
+.cache/
+
+# Local working notes, plans, and archived per-project scripts (kept locally, not published)
+Notes/
+plans/
+examples/
+
+# Local Claude Code state (machine-specific)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.claude/*.lock
+
+# Auth/config screenshots (may contain tokens or channel IDs)
+*Authorization*.png
+*Devmode*.png
+DiscordDevMode*.png
+
+# OS
+.DS_Store
+Thumbs.db

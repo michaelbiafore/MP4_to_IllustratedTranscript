@@ -1,0 +1,84 @@
+<style>
+:root {
+--accent: #059669;
+--accent-dim: #34d399;
+--text: #1f2933;
+--text-dim: #52606d;
+--bg: #ffffff;
+--bg-soft: #f5f7fa;
+--border: #e2e8f0;
+}
+html { scroll-behavior: smooth; }
+body {
+font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+color: var(--text);
+background: var(--bg);
+line-height: 1.65;
+max-width: 880px;
+margin: 0 auto;
+padding: 3rem 1.5rem 6rem;
+font-size: 17px;
+}
+h1 {
+font-size: 2.1rem;
+line-height: 1.2;
+letter-spacing: -0.5px;
+border-bottom: 3px solid var(--accent);
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+}
+h2 {
+font-size: 1.5rem;
+margin-top: 2.6rem;
+padding-top: 1.2rem;
+border-top: 1px solid var(--border);
+color: #0f172a;
+letter-spacing: -0.3px;
+}
+h3 {
+font-size: 1.18rem;
+margin-top: 1.8rem;
+color: var(--accent);
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h2#table-of-contents + ul { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.4rem 1rem 2.4rem; }
+h2#table-of-contents { border-top: none; }
+ul { margin: 0.4rem 0; }
+li { margin: 0.15rem 0; }
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 1.4rem auto 0.6rem;
+border: 1px solid var(--border);
+border-radius: 8px;
+box-shadow: 0 4px 16px rgba(15, 23, 42, 0.10);
+}
+
+p > em:only-child { color: var(--text-dim); font-size: 0.85rem; letter-spacing: 0.5px; }
+blockquote {
+border-left: 4px solid var(--accent);
+margin: 1.3rem 0;
+padding: 0.4rem 0 0.4rem 1.2rem;
+color: #0f172a;
+font-style: italic;
+background: var(--bg-soft);
+border-radius: 0 8px 8px 0;
+}
+code {
+background: #eef2f7;
+padding: 0.12em 0.4em;
+border-radius: 4px;
+font-size: 0.88em;
+font-family: "SF Mono", "Fira Code", Consolas, monospace;
+}
+table { border-collapse: collapse; width: 100%; margin: 1.4rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--border); padding: 0.6rem 0.8rem; text-align: left; vertical-align: top; }
+th { background: var(--accent); color: #fff; }
+tr:nth-child(even) td { background: var(--bg-soft); }
+hr { border: none; border-top: 1px solid var(--border); margin: 2.2rem 0; }
+strong { color: #0f172a; }
+</style>
