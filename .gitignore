@@ -49,8 +49,10 @@ venv/
 *~
 
 # Content directories (large files, not needed in repo)
-Input/
-Output/
+# NOTE: Input/ and Output/ are TEMPORARILY tracked for the first push so the repo
+# ships a worked example. Re-enable these two lines after the first push.
+# Input/
+# Output/
 .cache/
 
 # Local working notes, plans, and archived per-project scripts (kept locally, not published)

@@ -1,0 +1,796 @@
+[1:58] Look at the view recording in progress all right did something say someone said about the view uh
+[2:20] oh yeah i was showing you uh the view outside of my window so where are where are you why do you
+[2:28] have such a great view hawaii hawaii yeah all right i mean nice yeah we were joking yesterday about uh
+[2:53] needing to needing to get an invitation to go to hawaii for business trip working on that for a
+[3:00] while why is that a joke it's reality steven we're working on that imitation right absolutely
+[4:22] so yago you're gonna control the screen later right are you gonna share a demo later right
+[4:27] yes i'm going to do the do our of uh like session and then yeah i'll do a demo so i'm gonna i'll
+[4:35] share screen first so so yeah you will start right okay i'll start yeah okay let me get a
+[5:00] intro in place and uh so we gotta start it right so um yeah i i've been interacting with uh the
+[5:07] trainers here uh yan one and yz uh for uh probably three four months now right and it was originally
+[5:17] introduced by a mutual friend and uh and and and i got him i started reading you know uh yan yeah it
+[5:24] goes by internet goes by yaga and he's got his own website he's got his his group and i
+[5:30] been impressed and then and they're the ones who kind of confirmed what i was being what i've been
+[5:38] suspecting myself that the ai in 2026 feels and it looks very different from the ai i knew about in
+[5:46] 2035 but i didn't know how didn't quite know how to articulate it until i ran to these guys so they
+[5:53] have this group of uh they did run the community of uh about 2000 ai builders uh it feels to me that
+[6:00] this community is ahead by probably 18 months time uh ahead of everything that i've been seeing what
+[6:09] anthropic and and open ai has been pushing out uh so they run a training program for for for corporation
+[6:17] and i've been working with them to you know custom make this particular training class it's a three
+[6:21] session training class uh the main course is actually the uh the section two um you're going to hear
+[6:29] um you know jack and kind of talking about the uh the the uh what really the value the ai brings in
+[6:37] is not we can have a smarter smarter prompt or better model it's about you know today we start our
+[6:43] journey to uh essentially be able to training a ai agent that is personal to ourself bringing our own
+[6:49] context right like treating us i describe it about it if i hire intern today uh to be able to train
+[6:56] this intern over the course of the next 10 20 years to to think like me to to understand my thinking
+[7:04] logic right my context right um uh so uh you know we will be uh we'll be promoting a couple of
+[7:12] methodology uh you know uh yaga and that community has been uh promoting and one is called a context
+[7:20] infrastructure we'll talk about it uh next session and i'm also being i have been promoting obsidian as
+[7:27] a knowledge base inside diamond not to say that i've done thorough work naming this is the best system
+[7:34] i don't know if it is probably are better ones out there but i'm just saying if you haven't started on
+[7:38] ai yet uh the hardest thing the most important thing is get started yeah call it zero to one yeah
+[7:44] we have uh we've organized effort from y to to help everyone go from zero to one just i call it just
+[7:50] do it okay enough of my talk and hand over to uh i think uh uh uh you're on next yeah okay handing over
+[7:58] to you cool um i'm gonna share my screen you can see my slides right yeah so i'm going to use the
+[8:08] slide we teach uh uh we have been teaching this uh iterating these slides and talk 12 different
+[8:13] cohorts and with each cohort we update the content so this this is really the content that uh stands
+[8:21] the test of time but also um keep updated uh so it is also relevant uh the purpose of this the first
+[8:30] session is to not not it is like more than just to understand ai i'm going to talk about what ai
+[8:37] is first but we want to also build a better way to learn ai and capture as many possible as many
+[8:44] opportunities as possible so in order to do that we need to kind of understand the essence of the
+[8:51] technology as well as the best way to learn it so the agenda for the first module is simple first
+[8:58] we'll develop our understanding uh why is ai so hard to master what is this paradigm shift then we'll see
+[9:05] it in action with a hands-on demo to make this uh concepts real because i don't have your email
+[9:11] address uh so for the demo part i'm going to ask you to use your imagination a little bit but yen is
+[9:18] going to do a very thorough demo uh in his part okay so the core problem we all feel uh ai is incredibly
+[9:28] easy to start but frustratingly hard to use well and this is our course uh our course uh sells on maven
+[9:37] for two thousand dollar per person and most people came to our course because they resonate with the
+[9:43] symptoms i use chat but i feel stuck i cannot move beyond it i'm joining hype or when i try to use it in
+[9:51] my real workflow is clunky and often fails and it's great for demo but impossible to make uh make
+[9:58] reliable in production those are our problems beginners fail and uh i can almost guarantee you uh if you pay
+[10:06] close uh uh if you focus if you uh pay uh close uh attention to our our uh talk uh or our lesson at the
+[10:16] end of our session uh you shouldn't feel this you should feel like you are uh your mastery with ai
+[10:23] is good enough so it's reliable in production okay uh the reason we are experiencing those uh symptoms
+[10:32] is because ai is a paradigm shift i already talked about this uh during my uh like my previous uh talk
+[10:40] with uh diamond so i won't spend too much time on this but uh just a reminder that bill gaze
+[10:45] says in his entire life only two technologies struck him as revolutionary the second one is ai and
+[10:53] the third the first one the first one that is equally important to ai was not pc was not mobile
+[10:59] internet it was gui graphical user interface and a new paradigm is disorienting it brings a lot of
+[11:08] challenges not just technical but cognitive and emotional and those challenges boils down to
+[11:15] three core challenges the first one is we have to unlearn our old expertise cannot can be a trap
+[11:22] a classic a classic programmer's first instinct for example can be let's fan tune the model which
+[11:28] often the wrong approach with generative ai the second challenge is unknown target the old benchmarks
+[11:35] are gone we don't know what good looks like and it's hard to separate signals from noise and the
+[11:40] third one is fear it's tough to go from being an expert to a beginner again this fear of irrelevance
+[11:47] often stops us from actual learning we hear from programmers that the ai's code is not good enough
+[11:55] but when we ask for evidence most of them cannot provide concrete evidence they have that conclusion
+[12:01] not because they actually tested and draw a technical conclusion it's because they're afraid of being
+[12:08] replaced by ai and that goes for a lot of us like when we have this emotional resistance often it comes
+[12:16] from this fear of irrelevance so in order to overcome these challenges the most important thing the
+[12:25] foundation is to develop a true understanding of the new paradigm if we don't understand it we cannot
+[12:30] actually you know embrace it so the uh the root cause of all this frustration is that we don't actually
+[12:39] fundamentally understand what ai is a lot of us think of ai is a new tool or just a new tool or we go to the
+[12:48] other extreme thinking it will be the next intelligence that will replace our human being but let's go to the
+[12:55] actual uh technical details and break down at least one level do we really understand what ai is uh so
+[13:06] i guess let's really understand some big words that are actually important uh the first big word i want
+[13:12] to break down is paradigm so let's ground paradigm with this concrete story uh so to understand is we can
+[13:21] take an example from history right uh history that a paradigm shift we all lived through the iphone what
+[13:28] was the shift of iphone uh i guess this can be a question to the audience we all probably all the
+[13:35] professionals here use blackberry right uh blackberry i remember uh i think my first intern job was to
+[13:42] develop a html file that compels data for uh like a managing director so that he can view the html
+[13:52] on his blackberry screen and if you get one pixel off the blackberry screen just uh is all off so
+[13:58] what was the shift of iphone why is i'm so much better than all the other competitors feel free to
+[14:05] type your answer uh in in chat is it because it's from apple so it's cool or is it because it has better
+[14:14] screen uh the glass or is it because multi-touch or is it because of the internet i'll give another five
+[14:26] seconds for typing an answer okay uh if you judge the first iphone by the old rules it was not a very
+[14:35] impressive phone uh this article uh was written in 2007 and the review shows it was worse than nokia
+[14:45] n95 which was is uh most strongest competitor at the time in many categories uh the but like for
+[14:52] example iphone was not the first phone that has a 3gs 3g internet nokia had 3g uh internet before iphone
+[15:02] and nokia had a better uh for better camera than iphone but the problem is this comparison the reviewer
+[15:11] were trapped in the old paradigm all the future comparison was from the old paradigm sid said the
+[15:17] app store app store ecosystem great i think this this audience gives me the best answer uh so far
+[15:24] like most of my cohorts in most of my cohorts uh people talk about like it's just easier to use or
+[15:31] touch screen or no buttons but uh ecosystem and the app store i think are the fundamental reason
+[15:38] so the real shift was twofold uh first it was a device that was a natural extension of our body
+[15:45] we don't use buttons we don't use other different things but we uh iphone added a lot of different
+[15:49] sensors for example the gyroscope so so that it was a natural extension of our body uh the second is
+[15:56] it was a platform that gave everybody access to mobile connection and compute so apple didn't build a
+[16:02] taxi app they built the platform that allowed uber to exist and all the other apps uh in year one
+[16:09] iphone nokia side by side you can draw the comparison chart but in year 10 you cannot compare the entire
+[16:16] ecosystem of iphone with nokia there is just no comparison here so that was the paradigm shift and
+[16:24] uh i use the example not to claim that uh this is the exact uh paradigm shift of iphone but just to
+[16:32] illustrate that uh we often talk about paradigm shift but it's very hard to understand the essence of a
+[16:39] paradigm shift and uh so it's worthwhile discussing um but what is the paradigm shift of ai okay so to talk
+[16:49] about the paradigm shift of ai and go back to bill gates example of why ai is comparable only to gui we
+[16:57] should think about the value of all technology what is the value of all these tech form tech companies
+[17:04] the value of all technology is also simple it gives human access to compute all these companies
+[17:11] are trying to develop some way to give human compute access to compute and before ai we had two ways to
+[17:17] do that the first one is uh programming very powerful but very little very hard very hard to learn and
+[17:23] very hard to use the second is the gui the graphical user interface very easy but very limited very
+[17:31] expensive somebody has to build a button for you ai is the third interface i want to repeat this ai is
+[17:39] the third interface between human and compute that is the paradigm shift of ai for the first time we can
+[17:46] access powerful compute using natural language this is why the gui comparison from bill gates is so
+[17:54] perfect programming is the general purpose but hard the gui is easy easy but only for specific tasks
+[18:01] natural language is both general purpose and easy to learn it breaks the old trade-off and this is the
+[18:08] reason for example when jay talks about we are ahead of the industry i think a lot of our insights came
+[18:16] from this uh understanding this paradigm and uh be very kind of we are very firm on what is the main
+[18:24] uh thing of ai ai is about using natural language to give us a new interface to use compute all the value
+[18:32] or the big value comes from uh this innovation that is why we believe agent is so important that's why we
+[18:39] teach agents um and uh all of i think most like if not all of 100 percent of it 99 of our course is about
+[18:49] how to use natural language to use compute to do things that we couldn't do before okay so enough uh theory
+[18:57] let's uh see it in action and uh uh i'll use uh kind of toy example but uh with your imagine imaginations
+[19:10] the reason we go to demos is because real learning happens in a loop absorb information ponder and act
+[19:18] most of us get stuck and absorb our barrier isn't a lack of information it's a lack of action
+[19:25] so in my course i use a simple railroad task sending a personalized email to everyone from a google sheet
+[19:33] so i have all my still all the student name uh in my cohort and i have their email address i sent this
+[19:39] natural language basically to chgbt asking chgbt to give me a script and i use the script i go to google
+[19:46] apps and send everybody uh well kind of drafted email let's pretend you received the email all of you
+[19:57] received a personalized email uh from this script and we can use the example to think about this think
+[20:04] about what is the three interface for computing uh the old in the old info uh interfaces are programming
+[20:12] and gui so let's break down what just happened with the imaginary demo uh in the old world i had three
+[20:21] options for sending for example a thousand emails the first option is manual labor i can copy paste a
+[20:29] thousand times and change each person's name and the email body the second option is i can use programming
+[20:38] which is a high barrier the third option is gui for example i can buy a pre-built two the third option the gui
+[20:47] is a massive business uh with other companies uh now there is a particular company for automating email
+[20:55] for example uh one of the company there are many companies that can do this one of the company is
+[21:00] millchamp the company that just puts button on the email script sold for 12 million 12 billion dollar
+[21:07] this is not you know a market value this was an acquisition so sold for 12 billion for putting
+[21:13] button on email scripts and why is that why is gui so valuable it is because the task is valuable
+[21:21] it can be measured by how much labor was saved from automation my first options copy paste a thousand times
+[21:29] so if i automate the email the time saved is the value created the consumer surplus
+[21:37] uh so then i have i face competition right i face competition from programming or from uh using the
+[21:43] using the button from gui uh then the next question is why didn't option number two programming
+[21:52] work for most people it is because in theory automation is a one-time investment you write the code
+[22:01] then you are free but in reality is this old uh comic i think the comic was uh written like over 10 years
+[22:09] ago uh reality is we think we'll save time but we spend more time debugging our broken script so it reads on
+[22:19] the the uh in theory how it works is like uh i will write code i uh like i have work and i'll do automation
+[22:27] uh i will write code automation takes over uh i can do a lot of uh i got a lot of free time but in reality
+[22:35] is i write code i have to debug i have to rethink i have ongoing development i don't have time for
+[22:41] original task anymore so this is not only just programming is hard but programming and the time investment
+[22:49] you know time you know time time invested in programming is uncertain even for an experienced
+[22:55] developer there is no certainty in how much time you are spent on a new task so that uncertainty is
+[23:04] actually the high bar and the uncertainty makes most a task just not achievable or doesn't make sense
+[23:12] to use programming to solve so this brings back brings us back to the ai paradigm shift again we now have
+[23:21] this new interface natural language think about all human needs i break down all the human demand
+[23:28] all the consumer demand or enterprise demand into two uh two by two matrix productivity or entertainment
+[23:36] concentrated or long tail so gui like mailchimp solves the central soft the centralized productivity
+[23:44] demand or windows 1.0 or windows 98 or excel this dissolved centralized productivity need a demand
+[23:53] old web old web portals soft centralized entertainment platforms like tick tock soft long tail entertainment
+[24:02] but what about the last last box the long tail productivity demand the all these millions of small
+[24:10] customized tasks no one will ever build a gui for and just because our demand different differs so much
+[24:18] we have a lot of different approach for example you have a thousand different ways to write programs in
+[24:26] excel or you have an internal team that can develop customized software or you can have different
+[24:31] size or you can have no code solution but none of those actually worked until now now we have the
+[24:38] software 3.0 this is the concept by andrew capacity the software 3.0 in his example is use natural language
+[24:48] to write software so this is what ai solves it's user generated software if you put acronyms on this bucket in
+[24:58] this bucket the first is professional professionally generated software the concentrated entertainment
+[25:06] was solved by professionally generated content the long tail entertainment was solved by user generated
+[25:13] content and now the long tail productivity demand is solved by user generated software and that's why
+[25:21] we learn ai because we want to sell or solve our long tail productivity demand and even though it's those
+[25:27] are long tail they can be more important than the concentrated demand think about tick tock versus the web portals
+[25:36] tick tock unlock so much uh entertainment time and entertainment technologies uh none of the like if you if
+[25:44] you scroll the short screen short format videos there are no comparison to for example a hollywood made uh film
+[25:51] but the industrial industry uh you know you know how is way bigger and the opportunity is way larger
+[25:59] because uh there is i think the long tail demand follows the power law there is just no end to this
+[26:10] so this is the opportunity with ai we are moving from a world where you had to write the code which is you
+[26:16] know uh was shown on the left to one where you just have to describe the goal which is what we had on the
+[26:24] right so this is the disruption and it's the entire focus of our course to help you learn how to uh use
+[26:34] natural language uh to access compute to solve those long tail productivity demand
+[26:40] and this is why building is the best way to truly learn in this new paradigm i used to have this
+[26:48] analogy of learning ai is almost like learning swimming you have to get like you can watch two
+[26:55] thousand videos or go to a thousand different classes but if you are if you don't get into the
+[27:01] water you can never learn how to swim but my new analogy is almost like uh hiking like because you
+[27:07] don't need to buy a lot of gears for swimming but for hiking you actually can't buy a lot of gears
+[27:12] and a lot of people a lot of amateurs stop at this level we buy all the expensive gears for hiking
+[27:19] but we never learned how to hike we don't know how to navigate we don't know how to camp we don't
+[27:25] know how to uh break down the journey we don't know how the correct way to uh use force and how to
+[27:31] conserve energy we don't know how to uh like there are a million things that we don't know how to
+[27:36] how to how to do so yeah everybody can hike and we can look professional by purchasing the professional
+[27:44] gears and try to hike but if you try to travel distance if you try to conquer a high mountain
+[27:50] or a tough hike you have to learn how to hike so that is how we learn ai building walking swimming is
+[27:58] the best way to try to truly learn in this new paradigm and in every past paradigm shift the winners
+[28:06] had one thing in common they weren't just users they were builders so bill gaze uh mark zuckerberg
+[28:12] elon musk jeff bezos uh jobs and uh they were all builders but i want to be clear we are still very
+[28:24] early so if you look at these pictures they are these founders in their early age and we are in this age of
+[28:31] ai right now we are not in the end like the the age where uh billions uh billionaires that were made
+[28:38] even though ai is making billionaires right now but uh if you look at like these people are not
+[28:45] billionaires uh in their pictures they were just starting they were start they were building and i also
+[28:51] want to give you a very concrete uh story to help you um uh like remember this so uh the analogy i use
+[29:02] is we are not in the laptop era of ai we are in the mainframe era the tools are powerful but they are
+[29:08] still raw so on the left picture is ibm's uh mainframe computer if you look at all the wires from this
+[29:16] mainframe it's very intimidating and on the right i believe the color the machine was called pdb10
+[29:23] is so called the first personal computer it was still the size of a closet uh ibm mainframe is the
+[29:30] size of a room the pdb10 was the size of a closet but it was accessible maybe we are at this era
+[29:37] and if you look at bill gates he didn't just drop drop out of howard uh in 1975 when the first pc was
+[29:47] released although he did that uh he had been programming since middle school on early uh computers
+[29:56] in his middle school he had a terminal uh his school had a terminal that has access to pdb10 which was
+[30:02] the this computer on the right he was programming in his middle school and he founded a company in his
+[30:08] high school and started working for the government and did a lot of computation programming so he was a
+[30:16] proficient programmer uh before he went to harvard so when altair opportunity appeared this was the first
+[30:25] actual personal computer appeared he and paul allen were the ones ready to seize it because they had
+[30:32] already been building they understand the opportunity they understand what needs to be done and they
+[30:37] were able to do this anecdote from the story is when altair are released uh the ceo said when the car
+[30:44] when the machine was released there were like over 60 different programmers uh approach to this company
+[30:54] said they will build a basic interpreter for the company and bill and aleph were the only one that
+[30:59] actually built the interpreter uh the story is uh when alan was flying to the company to present the
+[31:08] interpreter uh he actually he he he realized that they didn't uh build the the bootloader uh for the
+[31:16] interpreter so he wrote the program with pen and pencil on the flight to the company that's how
+[31:23] proficient they were but they were able to seize the company since the opportunity because they have been
+[31:29] building for a long time so the opportunity belongs to those who start building before everybody else
+[31:36] and building is the simple simple the single best way to learn for two reasons the first reason is
+[31:44] it is your compass in a sea of hype the only thing that matter is does this new technology make my project
+[31:53] work otherwise every day we're going to see like 10 different articles talking about some new ai2 some
+[32:00] different ways to prompt some new concepts or some new methodology how do we how can we tell which
+[32:07] methodology which new tool or which uh new or format uh is important or not the compass is does this new
+[32:17] technology make my project work the second reason is building is our propeller the satisfaction from
+[32:25] building will propel us to keep reiterating in a way no homework assignment ever could we all came here we
+[32:32] all want to learn ai but uh can we do that can we take uh an hour or two every day uh building is the best way
+[32:42] to help you carve out that time because building can not only help help you save time and uh you know
+[32:50] earn more money but it also gives you the satisfaction uh it gives you the dopamine to help you uh build that
+[32:59] habit and uh be consistent consistent consistent and persistent in your learning and this requires us to
+[33:07] stay foolish okay and we must be patient so uh the the part of the part of like keep everything in
+[33:17] perspective uh we must be be patient the car was invented in 1996 so uh this picture uh on the top left was
+[33:29] uh the first uh the first car by mercedes-benz it was invented in 1996 but it took
+[33:37] 70 years to replace the horse even for car like obviously this is a better technology than a horse
+[33:44] but it took 70 years why is that because you don't just need a car you need to rose gas station and
+[33:50] assembly lines for example you need to invent the assembly line you have to have the infrastructure
+[33:56] you actually need to invest a lot of money in like a transit infrastructure so that the cars are
+[34:04] actually better than the horse the ecosystem takes time to build and it's actually hard for the
+[34:10] ecosystem to build because who is going to open a driving school when there are only two cars on the
+[34:17] road who is going to open a service shop nobody's going to do that so at the beginning the development
+[34:23] is going to be slow but once it's a rich kind of a threshold uh it will replace the old paradigm
+[34:32] so the ecosystem uh that's that's my explanation of yes all ai is powerful but why we are not seeing
+[34:39] ai replacing all the old software yet because the ecosystem development takes time and this is the core
+[34:47] concept of the course we are not teaching you to become a coder we are teaching you to use ai coding
+[34:54] as an interface coding is not the purpose it's the general interface to solve problems uh you'll see us
+[35:01] mentioning like how to use agentic tools and with the agentic tools you'll see it you know do a lot of
+[35:08] coding use a lot of softwares we don't want you to be a coder but that is the best way to kind of take
+[35:16] advantage of both ai and the existing ecosystem because the trillion dollar uh uh trillion dollar
+[35:24] industry of internet is built on top of apis on top of existing softwares on top of programs so we use ai
+[35:34] to code to help us solve problems remember coding is the general interface uh it is not the purpose
+[35:43] so our reality today is we use natural language to tell ai to write code that code glues together
+[35:52] existing apis to access compute and the reason we do that is because ai has read the other api documents
+[35:59] we have we haven't it acts as the universal translator this is the sweet spot we use ai to write code
+[36:08] we use ai use api to kind of use different formats and being able to achieve different things
+[36:16] and we want to take advantage take advantage of this sweet spot and build things that are actually
+[36:23] useful for us and it's not going to be smooth the journey is not going to be smooth you'll hit
+[36:30] challenges but those challenges are the opportunity if it were easy it would be value it wouldn't be
+[36:37] valuable like if you can do this with one shot then somebody else can do this with one shot
+[36:42] the reason you can do things that other people cannot is because you overcame challenges it's
+[36:48] becoming you encounter challenges you didn't just give up right you keep doing and you overcame those
+[36:54] challenges the fact that you overcame 10 errors and some somebody else gave up is our entire
+[36:59] competitive advantage in this journey so and that is why we must stay foolish we must adopt a beginner's
+[37:10] meant your old expertise can blend you to new possibilities this quote from suzuki was in the
+[37:18] beginners meant there are many possibilities but in the experts there are few you can read it two ways
+[37:23] you can say you know because the experts know a lot so it can eliminate other ineffective routes that
+[37:30] the beginner beginner think this is possible but the experts know it's not possible but we are in a new
+[37:37] paradigm remember the new paradigm there is no expert you have the false sense of expertise because you
+[37:43] you inherit a lot of knowledge from the old paradigm now is the time for experts to actually stay foolish
+[37:51] and to unlearn to have this beginner's mindset the quote is from his book the beginner's mindset the uh
+[38:00] i think the beginners meant the zement uh so yeah uh the beginner's mind is what we need uh today
+[38:09] our call to action to you is it's time to shift our identity from users to builders that is the best way
+[38:16] to learn and hopefully uh if we are successful in shifting our identity we can all uh be very like uh
+[38:26] like we'll uh we'll be guaranteed to stay current and to seize as much opportunities as many opportunities
+[38:33] as we possibly can so this is the new mantra the identity shift the user says this app is bad the
+[38:41] builder says i can improve it the user says the app i need is missing the builder says i can build it
+[38:48] just by shifting that mentality will help you unlock what's possible with ai and when we look at look
+[38:56] for problems focus on the bottom right quadrant so i again did a two by two quadrant uh is the task
+[39:04] valuable is the task disruptive if the task is not available and it's not disruptive as pseudo demands
+[39:13] like you shouldn't do this if if it's valuable but not disruptive it should be done it should have been
+[39:21] done well by gui by the existing companies if it's valuable or if it's not that valuable but it is
+[39:27] disruptive you can have some incremental gain by doing this task and we'll have some prototypes from
+[39:34] our course that are in this quadrant and focus on this quadrant first because to capture the actual
+[39:42] valuable things that have that valuable and the disruptive you have to go to this quadrant first
+[39:49] you almost have to go to this quadrant first and the reason is because time ecosystem and creativity
+[39:59] takes time you have to live in this new reality in order to see the opportunity if you don't know
+[40:06] what's possible with ai it's very hard to see the valuable tasks that can be done with ai
+[40:11] so those these are the things that were possible there were possibly before but were too expensive
+[40:17] the ai dropped the cost to zero you can start doing this we start here develop our habit and mindset
+[40:23] and with the new habit and mindset we can that's how we find the 10x opportunities and i don't just say
+[40:31] this there are actually history stories from history for example the history shows this pattern first we
+[40:39] apply the new technology to old problems for example mark cuban applied video applied internet to video
+[40:48] and became a billionaire but if you just have google at the beginning of internet google won't be so useful
+[40:55] because there are not many websites to search for so the new tech native solution emerge after a while
+[41:04] and we can always it's very hard for us to predict the google of google of ai or the ai native solutions
+[41:11] because we can only only start by building simple things people want instagram is another example instagram
+[41:17] started as a future app started as one of the many um one of many future apps it didn't envision itself
+[41:24] to be a social media giant like it is today uh which had started as a talk box that you can use uh you
+[41:32] know voice to to chat uh so they started small they started solving a problem but the secret is they built
+[41:40] something people really want uh the difference is whether it's really good or not there are a lot of
+[41:47] different future apps but instagram one because instagram was the best one the the one that people
+[41:52] really want uh the rest is probably serendipity and strategic planning whatever you call it but you
+[42:00] have to start here you have to start building things people really want so to be crystal clear when
+[42:06] i'm teaching how to build a lm we teach you how to capture the opportunities with ai when there is
+[42:13] a browser you should build website when there is iphone you should build applications when there is
+[42:18] lm build solutions by yourself so the learning ai i'm going to uh yeah this is the last part of my session
+[42:29] learning is hard but the process is simple most people think they are behind because they do not know
+[42:35] enough ai terms tools or frameworks this is usually not the real bottleneck not knowing enough concepts
+[42:44] is not a real bottleneck in real projects the gap is not who can explain rg the retrieval augmented
+[42:52] generation for example it is who can break down a messy task manage context well decide what ai should do
+[42:59] versus what human should do diagnose failure and keep reiterating tools are
+[43:05] components execution is the real advantage and this is why people can know other vocabulary and still
+[43:12] fail fail to ship anything useful and hopefully with our course you know how to ship things that are
+[43:19] useful you learn the verbs and we are not anti-tools matter but tools only matter once you know how to
+[43:27] operate them inside real work here i'm breaking down like this is why this course focuses on frameworks that
+[43:33] makes ai reliable in practice i won't go to the details of all the on the everything we do we teach but uh you can
+[43:42] i'll give you the deck so you can have an overview after the course to uh kind of check if you you learned
+[43:50] all these uh different areas uh the five gaps for example the first one is the output output gap uh the
+[43:59] second one is quality output gap meaning most people think better prompting is the answer often it's
+[44:05] not the real difference is whether ai sees the right context constraints standards and prior decisions
+[44:12] this decides if your output is good enough for for product production the second is quality gap when ai
+[44:20] output is bad most people just retry strong builders diagnose the actual cause missing contacts
+[44:26] saturate contacts ambiguous instructions or model limits the third one is delegation gap most users
+[44:33] still operate ai like a very fast intern they have to supervise constantly we want you to move towards
+[44:41] handing off complete tasks with clear goals boundaries and checks the fourth is compounding gap
+[44:50] without a system every good result is a one-off and every mistake every mistake gets repeated by your
+[44:57] future ai we'll show you how to turn experience into reusable assets and team memory the fifth one is the
+[45:06] leverage gap once the first four are in place ai stops being just an execution tool it starts becoming a real
+[45:15] thought partner that can help you reason surface blank spots and extend your judgment so the promise of
+[45:22] this this class is not just is not just that you are no more ai terms it is that you are close these five
+[45:30] gaps and operate ai at a much higher level it's about two things mindset and habits we have this
+[45:39] kind of hierarchy a lot of people focus on the tools but above tools is the method the methodology and the
+[45:47] above methodology is the habit and the above habits is the mindset so focus on mindset and habits everything
+[45:54] else follows and this is the recipe the simple recipe to keep doing keep learning ai is make something
+[46:03] people want loop first discover a problem second build a solution third overcome challenges
+[46:12] fourth find a market and last repeat this is the simple yet hard process the end of this course is
+[46:22] just the beginning of your real learning our goal isn't just give you a one-time knowledge bump it gives
+[46:27] you like like turning this dot from you know uh here to here uh if you cannot see my mouse like uh i move up the green dot
+[46:37] it is to give you the mindset and habit to change our entire trajectory uh so that every turn you choose a
+[46:46] different route uh you choose a different action and you can keep uh you know learning how to hike uh by yourself
+[46:54] and you won't be alone we already shared uh the community uh we'll share the invitation link to join the
+[47:02] community and you can keep seeing how other people build with ai and our knowledge sharing articles we also
+[47:10] have uh like uh daily kind of deep news articles that uh uh analyze uh for example the the news of the day
+[47:22] and truly get to the technical technical uh details of this those news okay to summarize first ai is hard
+[47:34] because it's a new paradigm the second is the paradigm is natural language as an interface to compute
+[47:42] the best way to learn is to build with ai we are early which means challenges are just opportunities
+[47:49] in disguise focus on acquiring the builder mindset and habit build something people want and stay
+[47:58] foolish so the last thing is uh if you don't have session two or sessions three calendar invites
+[48:05] context or sienna for the calendars session two is going to be about how to uh do production tasks with
+[48:13] the ai and say session three is going to build our compounding system with ai and i'll go to more details
+[48:20] in his uh session okay i'll stop sharing and if there are no feel free to ask questions if there are no
+[48:28] questions you can take over i assume there are no questions for now but feel free to ask them
+[48:40] during my presentation in the chat and yz will answer the questions over there
+[48:45] and why they just introduced a lot of very helpful mindset transitions and actually what we can do as
+[48:53] the first step is very simple just to stop use or the gemini app just use an agent and it's actually
+[49:07] much easier than people thought and that will be the major theme of my the my part of the presentation
+[49:14] specifically think about what you get when you use chat gpt you get a chat box you chat with
+[49:20] the ai ai ai gives you some responses but it has to be in the form of either text or similar form
+[49:29] but it cannot preserve or capture your preference save it somewhere it cannot touch your hard disk
+[49:36] cannot perform actions for you and that's a very key very important difference and in this presentation
+[49:43] we will spend like an hour to show those four very important differences
+[49:48] to you and so that you get a tangible feeling of the difference between using a chat box based ai and
+[49:56] an agent and the final goal for after this presentation is the next time when you think about i want to do
+[50:04] this with ai you immediately have the muscle memory of using the agent open codex rather than open chat gpt
+[50:12] that's the goal and it's actually very simple so more specifically we'll do four demos the first the first
+[50:20] is a scenario where people might get a lot of times we have 10 different files we want to rename it but we
+[50:27] just don't have the time or patience to do it chat gpt cannot do that for you but agent could do that and the
+[50:34] the second demo is we will then try to draw some chart from excel instead of just using our internal
+[50:42] excel expertise or asking asking our secretary or intern to do it we can also ask our ai to do it
+[50:50] and when something is wrong the ai will jump in instead of we tell chat gpt hey this is wrong and copy
+[50:58] paste the error chat gpt tells us hey this is what you should do and we do the back and forth copy and
+[51:04] pasting the agent can actually has its own eyes and hands so it sees the error message it fixes the
+[51:12] whatever like the code and reruns the entire process without any human invention and the most
+[51:18] important part is agents could capture preference and keep it there it will remember it because it
+[51:25] could save it to a local file and chatbot we all know how unreliable and opaque it is it's very hard to control
+[51:39] so all of this come together will make agents a much more favorable tools to use when we were using
+[51:47] ai and i talked a lot about agents and what is it exactly this is an agent-based tool people probably
+[51:56] already very familiar with it your technical intern should already install it on your environment
+[52:01] for example this is codex but feel free to use other tools like a cursor or clock code or even
+[52:07] and any gravity from google whichever is more convenient and compliant for you but actually
+[52:12] surprisingly all of them have very very similar interfaces and features and personally i think
+[52:18] they can be interchangeably used so here we'll use codex and example because i learned that is mostly
+[52:24] compliant in in diamond but feel free to use others and it's basically divided into two parts left part is a list
+[52:33] of conversations you have with ai pretty much the same as chatgbt and right hand side is a chat window
+[52:40] also pretty much the same but there is one key difference that i want to introduce first that is
+[52:46] a project different from chatgbt which doesn't have your local access it could it cannot not put it its
+[52:54] hands on your hard disk codex actually has this capability so you need to choose your project
+[53:01] more specifically a project is it could be a folder and here we already have the handout for session one
+[53:10] distributed on to everyone feel free to unzip it and you will see a folder like this and we will use
+[53:17] this folder as our project specifically we could click choose project here create a new project
+[53:25] from an existing folder and then we just select this handle session one select folder that's it
+[53:33] what does it mean it means ai would have the capability of accessing all the files within this
+[53:38] folder in most cases ai will not touch the files outside this folder so it's one way to a lie a clear
+[53:46] boundary to the ai especially for compliance that may be important and b also prevent different ai
+[53:54] projects to pollute each other this is the one way to maintain separation so this is about project
+[54:00] another important process important concept i want to introduce is this this orange front full access
+[54:07] it means what kind of access the ai could have it's another difference from chatgbt especially because it
+[54:13] could not only read about but also write and execute things on your computer we have three um different
+[54:23] settings here one is ask for approval basically that's very conservative whatever it needs to change it
+[54:28] needs explicit approval and authorization from human usually people would use this approve for me this
+[54:35] basically means the ai will take a look at what the agent is requesting and if it's safe generally safe
+[54:42] like browsing some website or copying some files it will just approve it for you if it's
+[54:50] fishy or it's not certain it will raise the flag and ask humans to approve so this is the second one and if
+[54:57] you really know the ai well and the data here is not too valuable you could afford the ai delete the data
+[55:06] then you can opt for full access for this demo for the efficiency we'll use full access and it's a good
+[55:13] idea to begin from more conservative settings and after you have some more ideas on um the the best
+[55:21] practices and the boundary of ai's capabilities we can go up to full access so this is the basic um
+[55:28] interface and principles of use using codecs and now let's go to the real meat if we take a closer look
+[55:36] at our handoff session we'll see there are some inputs here let's focus on the incoming part
+[55:44] here we have six excel files some of them are the price data of micron we scrape it from yahoo finance using
+[55:55] the diamond mcp which we'll touch later but essentially it's our level um price bar of mu the ticker
+[56:04] another side is some other excel files are news we pick 10 most important news articles with timestamp
+[56:16] in title in summary and url from diamond mcp and put it here a lot of times it's a pretty tedious and
+[56:24] manual process that's the reason why you see it has all very weird file names like hbm headlines april
+[56:32] copy which is for news and this is our export final which is for the price data and sometimes we do want
+[56:39] to rename this so that we could have a clear workspace and for further ease of programmatic processing so
+[56:47] here what we can do is we go to the ai and ask the ai to do renaming for us before we type the prompt
+[56:54] i want to introduce another thing that a lot of times the quality of the prompt is actually very
+[57:01] relevant with the length of it the more details we tell the ai the more context you'd have simple
+[57:08] if we only have the time to type we could probably just give 20 words 100 words to the ai just enough
+[57:17] for it to understand what it needs to do but a lot of times when you tell the ai why it needs to do this
+[57:25] pretty much like when you talk with your intern your direct reports then this kind of prompting technique
+[57:32] will enable the ai or inspire the ai to make it understand all the nuances of why you want to do
+[57:38] this and greatly improve its quality so a magic to make the ai work much better is use speech recognition
+[57:48] don't use keyboards and here we have our own speech recognition um tool coming with superlinear.academy
+[57:55] feel free to use it and it's open with a i assume that we will tell everyone how to set up your
+[58:03] superlinear academy if it's compliant uh account so that you have a free access on it and here we can
+[58:09] just press the record and it's pretty much the same as other speech recognition tool we can click the stop
+[58:15] it will just give it give us the the results and here we will use it to to demo how to prompt the ai for
+[58:23] now and then we have some files in the handout session uh slash demo inputs slash incoming please
+[58:36] take a look at the files and figure out what they are i have no idea why it's chinese but i assume that
+[58:43] it will work and i'll add one thing that uh we need to answer english oh why cannot be pasted ah probably
+[58:51] because there was some barrier in the in the windows machine so one background is this is not on my
+[58:58] machine this is on the diamonds um avp not avd and that might be some some weird issue between my
+[59:06] machine and that machine preventing the copying let me try that again if that work then we'll have
+[59:12] switch to plan b yeah still doesn't work so i have to type in the uh the prompt here the good news is
+[59:20] it's not that that that so we'll take a look at the demo uh inputs incoming check out the files here
+[59:32] so then what the ai will do is remember that it has access on your hard disk then it will do a look
+[59:40] through on this folder and then find oh hey there are six excel workbooks it's small enough to inspect
+[59:49] directly and then it will use its own magic to understand what's the internal internal um content
+[59:56] of this itself excel sheets and then oh they are clean um so we can tell whether they line up cleanly
+[60:07] or whether they are duplicate all the naming quirks and that's a very good point but yeah i already
+[60:10] noticed that hey this name is very weird and then it check the more details of the workbook like the
+[60:23] shape or any obvious quirks and then we could actually at the same time we could prepare for our next
+[60:34] next request can you rename the files probably into um i know 2026 02 um price
+[60:48] dot xlsx and uh news like that and note that we don't need to very rigid rigidly rigorously tell it
+[61:02] the exact format we just give it some examples and then notice note that this is currently queued
+[61:13] it's a feature of codex that you could when the ai is doing its own own work you could type the next
+[61:21] prompt and queue it here and note this small button you could even if you have multiple prompt
+[61:27] prompts being queued you could even move it around so that it could the order could be adjusted and
+[61:35] actually it's it's already it already figures out the um specific names and the format like here it
+[61:45] knows there are 10 articles for each month there are several hourly bars some certain number of hourly bars
+[61:50] operators then know that the queued prompt jumps into effect here and that allows the ai to now do the
+[62:00] do isn't working and note how quick it is it just renamed all the files at once without us to do the um
+[62:08] the tedious work and i want to emphasize that what we just did here is actually exactly what yz described
+[62:17] before this if we want to rename say 100 files we have two choices we can either write a program
+[62:25] which is error prone which takes time or we can probably use a very specialized
+[62:33] software assuming there is one like a batch renamer i think there is one we need to spend some time to
+[62:38] figure out to download some some software from internet and then figure out whether that's compliant and then
+[62:45] try it out figure out how to use it but with the ai essentially what's happening here is especially
+[62:50] agentic i know that how chat gpt cannot do this task what's happening here is we are invoking the
+[62:57] computing power we are telling the computer how to do that using natural language and essentially the
+[63:03] the codex still writes code but it's transparent to us we don't need to know how to write code that's the reason
+[63:09] why i never mentioned oh python or terminal or the different terminologies it doesn't matter it's
+[63:16] managed by the ai and the agent would be our major interface to communicate between us and the computer
+[63:23] it's how we invoke the computer power of computers and a side note is it also applies to the phones you
+[63:30] can write programs using codecs so that i could run on your phone so you could really be the the owner of
+[63:37] your iphone your android even your apple watch your apple vision pro i did a lot on that if you use ai
+[63:44] wisely but coming back to the to the main theme is that agent could really touch the hard disk and do
+[63:51] really hands-on jobs for us and then um the next demo is let's go one step further we now have a lot of
+[64:05] uh hourly price bars how about we visualize it as a chart it's totally possible that oh we could do
+[64:12] that using excel i know how to do that but a lot of times this will give us a much better experience
+[64:18] and also much easier so that we could focus not on the all the excel tricks but on the real analysis
+[64:25] and here we'll just tell you to do like wow can you plot
+[64:32] a chart of the price of all the month for me probably using a web page um on a web page so we don't need
+[64:45] to to know all the details like what kind of technique uh html like what kind of editor hosting service no
+[64:55] we just tell it on web page that's it and let me try to change this to medium so it's a bit faster
+[65:03] and by the way this is another interesting setting it's basically the reasoning effort
+[65:07] higher slower probably smarter and for for our cases probably medium or even light will work
+[65:20] and also cheaper faster and cheaper and then oh it's smart enough to figure out whether the the date
+[65:27] is the time is in utc or in the local time so well it will do some sanity check that's good and after
+[65:41] that let's think further so after imagine we have a chart we all know that it's possible to do in the
+[65:50] excel it chose some technique like mgs i have no idea what that what that means but let's see whether
+[65:57] we could do the job and imagine we have a chart and we can see the the upper up and downs and a lot
+[66:05] of times we want to understand fundamentals we not only want to see the shape of the price changes but
+[66:10] we'll understand we're trying to understand the underlying factors the wise and one fundamental way
+[66:17] of doing that is we overlay the news articles together with this price so that we can learn that
+[66:24] or what cost of this we can develop hypothesis on what is the underlying reason and because
+[66:30] we already have the news and the news also has a date on it it's a pretty good resource for us to
+[66:37] do this overlay visualization so now we could potentially do that just ask it to can we further
+[66:45] do an overlay on the do and overlay on the chart so um the news articles are rendered as dots and when i
+[66:57] click on certain dot on a certain dot it will it could show me the um summary
+[67:14] and i can further click into the news uh url to double check so we also queued another prompt and
+[67:29] let's see what the ai is doing right now so the ai basically says that the output file is placed at
+[67:35] output mu price chart.html and it tried to open the browser but was blocked by some security settings
+[67:43] but it it it's okay we can just open it oh it figures out how to bypass that i have i don't have
+[67:51] enough information on what is exactly the security setting but it looks like it works now and it's
+[67:57] it's pretty it's pretty impressive so this basically shows how this um microns stock in the the the price
+[68:07] changed along the three month time period and it's interactive note how the how the experience is
+[68:16] different from excel we we could hover the mouse cursor on it and see more details and we could do more
+[68:23] i believe this is filtering on each month um data and what is that oh this is the boundary so note that
+[68:37] now codex is even interacting with the web page it's not our mouse cursor our mouse cursor is here
+[68:42] this is codex cursor and it know that it's moving its mouse cursor click on the elements use this vision
+[68:48] capability to figure out whether that satisfies our requirements and that's another very important
+[68:54] thing um a part of important difference between codex and trygbt it could um use and combine the
+[69:04] capabilities from multiple tools to do a comprehensive task and now it reports that basically it finishes
+[69:13] the the this job and we confirm it it really did a good job and now our prompt of asking to do the news
+[69:22] overlay came into play and another thing i want to emphasize is it wrote something it it ran some some
+[69:31] commands it uh wrote some file some um file with a programming language i never heard of and then it
+[69:41] runs this file all by itself so this is this kind of proactivity is another very important part
+[69:51] and if you take a closer look at this you will see sometimes the make made mistakes sometimes there is
+[69:58] a success uh but there are also sometimes it's not always a success in this case trygbt would tell you
+[70:06] you would need to run the program chat gpt gives you and paste back the error messages and then chat
+[70:13] gpt will give you a new version but here in codex you will read the error messages adjust
+[70:18] its program and rerun so this also saves us a lot of time and now let's see it's writing another hundreds
+[70:26] of lines of code to do the overlay and let's see how well is or bad it's doing another several hundreds
+[70:46] of lines and i want to intro take this time to introduce another very interesting feature this is
+[70:57] a full-fledged browser it could be some web page we developed it could could be something else for
+[71:04] example you could ask you to open bloomberg log in there and ask to to operate on your behalf you
+[71:13] could also use it to um get some data from certain resources it could do all the things for you personally
+[71:22] i used to have to do grocery shopping but i i guess that's a not very impressive use of codex and now the
+[71:31] new builder is in place it's rebuilt html with a new state embedded we could i believe we could refresh
+[71:45] here to get a peek yeah looks like it's it's doing its job well there are dots which indicate news
+[71:52] articles we could click some dots click on it and it pops up a window it says micron shares slip as
+[72:01] hefty spending plans eclipse a strong ai field earnings we could open the raw news and did it just
+[72:10] crash let me double check yeah so looks like it's crashed that's so weird open ai really needs to
+[72:17] improve it's it's so our quality i'm currently restarting it it's restarting or is it updating i'm
+[72:31] not super sure but it's a good good time for us to show how to resume from a session so we can we can
+[72:41] come here and it just finished this and we could just go to here to open the browser and ask it to open
+[72:52] here we can um looks the app just crashed can you open the html file in the browser again and it could
+[73:07] just open the file here another um approach to resume is we could go to this folder try to figure out
+[73:19] where the ai puts this price chart is right here we could just double click it and open it with the uh
+[73:29] the fort browser and we were looking at i don't remember we're looking at where uh like we'll use
+[73:37] this as example i think the ramp prices is bad now it just keeps getting worse we could open the url here
+[73:43] here verify you're a human yes i'm a human and then go to check the the original source so this is one
+[73:53] important part that we really want the ai to make its presentation very easy to verify so that's the
+[73:59] reason why i i put an open url button here i explicitly asked to put the button here so that
+[74:06] we could easily check in and to verify oh at least the title is correct all right so let's go back
+[74:13] into here so it's reuse the crash the state looks like it tried to open it but because of the crash
+[74:21] of the state it needs to do something another minute and while we think about our next step
+[74:30] well looks like it is it did its job i what i like like this about this figure is it really shows the
+[74:38] overlay correctly what i don't like it is the y-axis is fishy it starts from 200 it's not from zero
+[74:47] so it actually magnifies on the the trend the upward trend if we plot it from zero the chart actually
+[74:58] will look very differently and that's a trap i don't really want this to distract my further analysis
+[75:03] that's the reason why we will ask it here can we make our replot the chart with the y-axis from zero
+[75:18] and know that this is i would say a preference some sometimes people prefer um a chart like this and
+[75:27] that's just my personal preference and now i'm doing a correction to an off-the-shelf implementation
+[75:35] of an ai that's pretty much like personalization and we will go to the cart of it later but now that's the
+[75:42] ai to do its job and another thing i don't like this is probably um my job is focused more on the
+[75:52] earning part so i will i will ask you to only keep the news articles relevant with earning and discard
+[76:00] all the others because now there are like 30 different articles it's so hard for me to do
+[76:04] analysis so can you remove all the news articles not relevant with earning and now it's reloading the
+[76:21] browser and let's see oh it starts from zero very effective probably in one minute i think it's much
+[76:28] faster compared with you ask your secretary or your team member to redraw the the chart and know that
+[76:40] now we're we're uh doing two corrections here here is another part that chargeability cannot do imagine
+[76:46] another scenario in the future now we're doing analysis on 2026 from march to to may in the future
+[76:54] imagine like the june's data coming in and we try to redo the analysis if you do that on
+[77:00] the uh and off the shelf um ai model it will probably do pretty much the same as here but it will
+[77:07] likely forget or don't know about the specific preference on the y-axis starting from zero and
+[77:15] only keeping the the earnings it's not like the end of the world you can't solve it by
+[77:24] crafting a prompt when you when you ask the ai to do the job you could ask it to start from zero
+[77:29] you could ask it to to only keep the news articles relevant to with earning but this will it's very
+[77:36] tedious and a lot of times we have to spend our brain power on requests like this rather than do
+[77:44] our own job that's the reason why reusing is is very critical and in tragedy it's i wouldn't say it's
+[77:54] not possible how to reuse preferences like this but it's relatively hard it's much harder comparing with
+[78:00] using codex and here in codex you can just ask it i want to reuse this this visualization for example
+[78:13] if i have some data from the future coming in i want it i want another ai to reproduce a very similar
+[78:30] visualization so could you write a markdown file probably put it under skills
+[78:43] so i want to use this folder describing the process and now the ai finished this part and it's good
+[78:57] for us to it's a good time for us to check the quality so we could click on it to see whether all
+[79:02] of them are about earnings yes it's powerful setup ahead of earnings how about this memory chip makers
+[79:09] as mindful and like uh said during the the company's latest earning call this is indeed about earning
+[79:20] although it's not obvious and how about this stock keeps hitting new heights and how much traders
+[79:26] is the market to move after the earnings so they are indeed about about earnings the ai did a good job
+[79:31] filtering them all right and then the ai is currently writing the markdown file we could take a peek on it
+[79:39] uh click on this i believe oh it's still being written so probably that's the reason
+[79:44] let's see let's move this window here yeah it's still being written so we cannot really see the
+[79:51] exact content yet but now it's done so we can see it let's see whether we could put it somewhere
+[79:59] else yeah we could just click this and open another window we could also directly view it here
+[80:04] here i believe we could also view it here if we if we switch to another tool let's see
+[80:15] files ah suggested ticker price news visualization.md and now uh this is what the ai just wrote
+[80:24] it says it's a reusable method for turning monthly ticker price files plus monthly news files into a single
+[80:32] self-contained html chart good so let's do an experiment what if we indeed have a new month data
+[80:39] now actually we have that in our handout as well it's here in the demo inputs and extra is is here we
+[80:48] have the june's data but instead of continuing the conversation let's create a new session which means it
+[80:57] loses all its previous memory the only thing it has at hand is that file and i want to introduce
+[81:03] another feature of codex that you can use at this this at character on the keyboard to give it a specific
+[81:14] file and here remember that we have the skills folder the the file is this ticker price news
+[81:20] visualization.md we just give it this file so it reads the content of the file understands the content
+[81:26] of it and then we ask it um take a look at what's the name of it demo input extra by the way this you
+[81:36] can also use at and visualize june's data and know that it has no explicit memory about our previous
+[81:47] previous conversation it's a brand new conversation so it has to read this um figure out the the
+[81:53] photo structure from scratch read this markdown file and figure out what to do next so reuse the existing
+[82:04] chart pattern stays consistent with classroom handout and i'm currently reading the the questions
+[82:19] are you sure with how to do it do we need to share login details yeah for that question the the ai
+[82:25] fellows could help with that and it looks like that's another question great yeah i also agree
+[82:33] that the bloomberg example is is very interesting because usually that's like a six-figure five-figure
+[82:39] license but if you could automate that using ai's browser capability that's a that's a good deal but
+[82:46] definitely check with the compliance department figure out that's that adheres with the current term it's
+[82:54] very interesting how they decide to to um reimplement reimplement everything from using a different
+[83:00] technology that is python that's that's interesting we'll see whether we can uh achieve the the same goal
+[83:07] here in the worst case if it gives us a different feeling or different um style we could always go back
+[83:16] here give it feedback to modify this markdown file and ask this to redo in the worst case but i believe
+[83:26] it will be able to to to get the correct thing so let's go to here it says the june html is generated at
+[83:39] output mu prices news june so we'll go to output june yeah i think it's not entirely correct the good part is
+[83:53] it's it starts from zero it remembers our correction that's great but i'm a little bit suspecting that not
+[84:02] everything is about earning costs looks like this one is not about earning costs and this is let's see
+[84:11] this is also not about earn costs so it's a very good it's actually a good thing let's show you how to
+[84:18] correct this so now we go back to this and tell it hey i only
+[84:26] want to keep the earning call news articles and pay special attention on how we prompt the ai
+[84:40] i i never use very technical words and it's pretty much like what you would say to to our secretary and
+[84:49] then the ai would be able to translate it into very hardcore technical stuff and do its own thing
+[84:57] and here let's see got it i will tighten the the filter from broad to micron earning call
+[85:06] i mean the markdown file and another interesting feature is here you could steer the conversation in
+[85:17] real time by clicking this steer button so that instead of waiting for the current prompt to finish running
+[85:24] it just interrupts the current run and steer the conversation right here here because if it's not
+[85:35] patched or steered in real time it was just a waste our time because with a misunderstood goal it will never
+[85:43] achieve the the actual filter so now it tries to modify this this file all right and let's see whether
+[85:56] we have earning here we have earning here you could search okay search the chat it's not search this file
+[86:02] let's see whether i can search the file here looks not i give up here so we'll come back
+[86:15] uh to this conversation and realize juniors data and tell it i updated the skill a bit could you
+[86:26] redo the task so it first we read the updated skill and then redo the visualization and the important
+[86:56] bit juniors should now defer to emu specific earning call report items it got it so it modifies its
+[87:03] code as well and regenerates once my housekeeping fix and then i'll regenerate and verify and let's see
+[87:20] if we refresh only two of them are capped and one is is this uh says they are probably far over
+[87:30] the earning conference call that really got the invest going so this is correct
+[87:35] and also this one yeah it's expected to report earnings per share of 20 dollars so this is all good it
+[87:45] faithfully reflect what we expected and this is all reused and adheres to the original corrections
+[87:55] and this is very important because it allows us to reuse whatever we have with the ai especially
+[88:02] um with knowledge base like obsidian if we open this um folder as an obsidian bot we could see all this
+[88:16] skills like here now we only have one single skill and imagine that in the future we'll have the second
+[88:22] the third even the hundredth they they could interconnect with each other and that's the very important thing
+[88:29] that i want to emphasize that um should be here a lot of people would complain that oh i don't really
+[88:38] want um to use ai because this will make me less competitive um this will like the the ai model will
+[88:46] distill from my capabilities but actually we hold the a different opinion with we think the reality is
+[88:53] pretty opposite the reason is ai models are off the shelf how they are trained the size and very
+[89:01] important fact that they are trained on consensus and we all know that the consensus there is no alpha
+[89:07] in consensus if you want to make money you have to find something contrarian but here what we just did
+[89:14] is sort of like a contrarian we give it a preference although in this case it's very small based on
+[89:23] the off-the-shelf model so that it becomes your ai and in this process the more you use the ai the more
+[89:31] either context or skills you accumulate your ai will be more different from the others and essentially
+[89:39] it's your context that make your ai more special and the contexts are all accumulated in opposite
+[89:46] knowledge bases so that it also has a compound effect it's a compound asset and based on this
+[89:54] it's actually more competitive you you are more more special after you use ai more more and
+[90:02] you get more competitive edges against others so this is one thing i want to correct
+[90:08] um there is always a misconception there are students asking us about that and another
+[90:14] difference i want to uh since we mentioned bloomberg another difference i want to explain about
+[90:19] why this is different from bloomberg like like this chart bloomberg does have a similar feature
+[90:25] i believe that's news on chart or something but our case in our case it's different in a we own the
+[90:32] product by product i mean we own the data we own all different settings and remember that when we
+[90:39] don't like how the y-axis starts from zero or when we don't like how the ai picks the the news articles
+[90:46] we just ask the change and immediately we get what we want but imagine that you want to add this feature
+[90:52] to bloomberg submit the feature request to them and probably wait for three years for them to receive
+[90:57] enough requests from different customers and finally make this change it's just the the flexibility and
+[91:05] the latency the responsibility sorry the how responsive it could be is totally different and another thing
+[91:12] is we could supply our own context to it instead of relying on on the the stuff from bloomberg itself
+[91:19] we could just supply our own reports even our um also by ourselves so it um established a data flywheel
+[91:29] so that that's basically it for all of the demos um i want to add another last bit that how we get
+[91:38] all the data the data all come from diamond mcp you can ask the ai fellows to set up the diamond mcp for
+[91:45] you but it's actually a natural again a natural language report way uh to access all different
+[91:53] information within diamond for example you could also ask it to introduce use what i can do with diamond mcp
+[92:03] or ask it to export the hourly price data of mu in 2026 uh june or probably
+[92:13] uh output a csv file with time uh time and the price the just the two fields and we'll do the do the data
+[92:34] collection for you do the formatting of course the the prompt we used was a little bit more complicated
+[92:40] than that remember that we have some different fields but it's this is a spirit you can go to codex
+[92:53] after you have the diamond mcp set up just ask it to output all this data for you and this is very
+[92:59] interesting the mcp endpoint enforces 70 maximum for intraday intervals and codex is smart enough to get
+[93:07] run this by submitting different requests and they can catch anything together this is quite interesting
+[93:14] so that's pretty much it in our handout you will be able to find several things the first is
+[93:22] the slide deck this is exactly the slide deck we used to introduce this demo see it's here it's all here
+[93:32] and you will have this demo inputs so one homework for this session is go to your environment ask your
+[93:41] ai file to set up codex setup that mcp for you and use the incoming to rename the files and plot the chart
+[93:49] by itself and if you prefer another ticker feel free to do that and after that use your subjective
+[93:59] preferences to tell the ai what to do how to improve this visualization and serialize it save it to a
+[94:04] skill file and then open another conversation as to do it again on the actual folder that's basically it
+[94:15] you can also check out the sample outputs if you're not sure whether what you get is correct
+[94:20] we also have um this example or skill also put it in here in the docs so you can also compare and
+[94:33] contrast whether the written skill is is good enough but i would i would really recommend everyone to use
+[94:40] your own real preferences and begin writing all those skills so that next time even a off-the-shelf ai model
+[94:49] will know exactly what you want what do you prefer and it will be smoother and smoother you will know
+[94:55] you two will know each other uh better and better in the future so that's it for today and before i
+[95:05] end this presentation i want to introduce or reveal the three basic properties of what is an ancient
+[95:12] ai first they could use tools excel python html whatever tools it could use then it could run combine
+[95:22] multiple tools together to to get a very complicated task done and the third is the process is getting
+[95:30] things done is not aesthetic it's not like a program just execute whatever it is is asked to do it actually
+[95:38] inspects the result and change the next step according to the result and this forms a loop and that is
+[95:46] a genetic ai the next time the ask is do not use chargbt but delegate the task to codex so that it has eyes
+[95:56] on your files on the local disk it also has the hands to execute and the right things on your behalf
+[96:03] that's it for my part and yz and i are happy to take questions again do you want to give a preview of
+[96:11] session two and three yeah that's a good idea in session two we will talk a lot more about so-called
+[96:18] context infrastructure because as we just mentioned very briefly the alpha lies in the context when we
+[96:26] talk about how to use the ai while more effectively the most important factor is not use the most smart
+[96:35] model or you use a cursor instead of codex the most important part is how much context you give to the ai
+[96:42] and whether you could you could build that loop to output useful distill and output useful skills like we
+[96:49] just did and use it again to fit in to new tasks if you establish this loop it might be very rudimentary
+[96:59] and from the beginning it it's an effective way of accumulating some compound assets and accelerate on
+[97:06] its own so this this session two will use an end-to-end example on all the different components to
+[97:14] introduce all the different components of establishing such a loop and for example input processing output
+[97:22] we're using and in session three we will talk more about how to write skills effectively by skills i mean
+[97:30] that markdown files the spirit is simple but there are a lot of best practices and a lot of pitfalls
+[97:39] we'll go over four different pitfalls over there especially for useful for people doing knowledge work
+[97:43] like doing research um doing analysis you will benefit a lot from that session as well
+[97:50] so those those will be the next two sessions major content cool happy to answer questions here
+[98:02] thank you yuzhen thank you yaga hello diamond knights do you have any questions feel free to type in the
+[98:10] chat box or even you can turn on your camera and mic to talk to yuzhen and also yaga
+[98:20] hi hi sorry sorry i think you probably want to turn off your speaker
+[98:39] can you hear me now yes yes okay this is anna here and all of our af fellows can you say hi to
+[98:47] yeah good and pijen and all our demo colleagues hello okay yeah so um since that some of our
+[98:55] demo colleagues are using cloud code uh yeah can you show briefly how different panel or button can be
+[99:05] mapped between these two apps because um cloud code is also installed in the abd so maybe you can just
+[99:11] briefly show how to navigate through cloud code that that's a good point so let me do that
+[99:18] cloud code looks like this very very similar to codex the only thing we need to pay attention is here
+[99:24] there are three tabs do not go to the wrong tab if you click chat it's the traditional chat window if
+[99:31] you go to code that's the real cloud code and similarly this is the project in codex this is the chat box chat
+[99:40] chat box in codex oops it crashed again oh i thought it looks like oh open ai has slightly better
+[99:51] or probably it's updating i don't know slightly better software quality than exotic
+[99:55] and this is chat box this is the the mode we talked before the auto mode is the approved for me
+[100:02] bypass permissions is full auto and this is select which model to use and this is the reasoning effort
+[100:12] pretty much the same another um thing i i want to introduce is a very interesting thing is remote
+[100:18] in both cloud code and the codex you could turn on the remote feature i think it's somewhere
+[100:28] in settings um you could turn on i think for cloud code the remote the remote control uh function is
+[100:36] just available for personal plan i see in that case probably i'll just skip the introduction of this
+[100:48] feature okay and um does this answer your question yes or maybe some colleagues who are using cloud
+[101:03] codes if you have any questions you can raise in the chat box or just ask yeah well for background um
+[101:14] ai fellows uh jiai just showed us um every new faces in the conference room in hong kong office
+[101:20] uh we have a 10 cohort of ai interns joined us yesterday and all of them uh will train have a
+[101:27] ai training for this first two week and from week three they will match with different pm to work with
+[101:35] their ai projects separately for next six months and if you have any question wanted to set up a
+[101:42] codex and clock code and even obsidian you can reach out to them um jiai is the name of
+[101:48] of he she is the leader of this ai fellowship program and also ian chun um or so you can you
+[101:55] can reach out to him to set up any applications you may need um other than that um i will go back to
+[102:02] the questions lanjo has one question any teams advice on best practices for cross-agent coordination
+[102:09] across colleagues vault setup md file editing etc the question i will give to yu jin or yaga you can
+[102:17] answer it probably i can take that question and why they could add more um it's a very good question
+[102:27] and usually there are two mechanisms the first is there are team level collaboration procedures
+[102:35] like team skills think about some some procedure of collecting data from certain roles redistributed
+[102:45] across the team build and how to use the dashboard this kind of skills are built for the team and used
+[103:03] by the team this would be usually be shared in the form of a shared either start network storage or github repo
+[103:15] or git lab repo so this is one side another side is i have an agent i have a skill i want to i want to
+[103:25] my colleague to also share my skill this could be shared um done by establishing a marketplace for
+[103:33] skills we will talk about it in our probably session two and give people a ready to use market share place
+[103:41] is actually here let me show you um it's on my github and here i already provide people a lot of
+[103:58] skills that are ready to use it's for now it's a global website but it's trivial to just to put it
+[104:06] internally as an website or a marketplace for people to upload update and share the skills and third part
+[104:17] which is currently pretty early stage is probably you want to directly talk with your colleague's agent
+[104:24] rather than for example the colleagues is in sleep or in a different time zone that's another thing
+[104:30] that we're still actively exploring but it's it might be out of scope of this question just want
+[104:34] to mention that if you have interest in that feel free to to give me an email or ask questions later
+[104:39] you can talk about it so that's that's it from my side thank you yaga uh another question from mincy
+[104:48] how to double check the work by ai for example and the and the renaming example how can i know it
+[104:55] didn't rename as a new file as a price file also how can i know the data it polluted is the right
+[105:04] data not some data is made up thank you that's a great question and i want to answer that from two
+[105:10] aspects the first aspect is from a trust aspect when you hire a new intern probably at first you two are
+[105:21] very careful you are for every every task the intern hands on to you hands out to you you will
+[105:28] do some hand holding and do some very very detailed inspection after a while you two will have some
+[105:37] feeling that oh for this kind of task i can i'm i would feel very comfortable delegating it but for that
+[105:45] kind of kind of task it's uh right at the boundary i will need to pay more attention on it and here
+[105:52] i i know that oh it's from my personal experience that i know that this is this kind of renaming
+[105:59] task is within my comfort level and models like gpt could do that really well that's the reason why i
+[106:06] didn't really bother with checking but in the case that you anyone starts from scratch it's always a good
+[106:13] idea to start from conservative conservative and double check everything and gradually uh let ai go
+[106:21] it you will hit you will be backfired but that's a good opportunity to recalibrate this boundary
+[106:29] and the second point i want to make is imagine in a organization imagine this is not an ai this is a
+[106:37] some human direct reports what do we do there are two potential ways of doing this quality check
+[106:43] one is double check essentially you'll redo the thing you redo the task and check whether the
+[106:48] results are the same and one is cross check instead of redoing the exact task you pull data from
+[106:55] different sources use your experience to check does that look right do those numbers match usually people
+[107:02] especially experienced the managers will do the latter because if we do the double checking the manager
+[107:08] which could be a manager of ai or manager of humans would quickly become a bottleneck of an organization
+[107:14] it's not scalable and it's actually one manager's core competency to quickly cross check spot the
+[107:23] suspicious things so those this is very important and a minor point i want to mention is one thing i i
+[107:32] mentioned in in the demo is i is explicitly ask the ai to present all the information such that it's
+[107:40] easy to be verified and that's also important our bandwidth is very precious we want the ai to present
+[107:47] it in a way that is easier for for me to to do the chat i can add to this because i think the question is
+[107:55] quite important we all understand that uh models hallucinate but our task is critical so we cannot afford
+[108:04] mistakes i think the general principle is obviously cross-track and uh you know uh like just work with ai
+[108:18] to understand its punctuary but the principle is trust the process not the brain because large language
+[108:25] models work on this next token prediction and uh the next token prediction is probabilistic uh it will
+[108:33] hallucinate as the nature of the model but when you trust the process you are using the brain of the model
+[108:41] to write code or to generate the process so that uh the mistakes will be surfaced and with the agentic uh
+[108:49] way it will be feedback like it will be like uh read and understood better model so the model can spot the
+[108:57] mistake and avoid the mistake um like for example uh how can i know the data is uh it plotted is the right
+[109:05] data now some data made up because the model wrote the code to plot the data the model didn't generate
+[109:13] the data from you know its next token token prediction if the code is correct it's like seeing a human
+[109:20] writing the code i don't need to understand the human's intelligence or the human doesn't have to
+[109:26] make uh like be error error free 100 of the time but if i trust the code if the code pass a cross check
+[109:35] then i can trust the results generated by the code so the general principle is uh we need to develop
+[109:42] the process so that the result is trustworthy thank you thank you yuzhen and yaga and mingxi's question
+[109:56] is very relevant um let's see if we have any questions please raise up and we have final five
+[110:03] minutes if there is no further questions um i would like to promote a little bit for the session two and
+[110:20] the three for the session two is about the context of infrastructure on july 13 so the main event for
+[110:27] everyone you build a personal agent and learn the real level it's a memory and contest not a clever
+[110:34] prompt that make ai compounds on your own work everyone lives with the same working setup and
+[110:40] for the session three for those who wanted to go further design your own skills and manage the ai like
+[110:47] you'd manage a capable junior so if you don't have the session two and three's calendar please reach out to
+[110:53] me in team and i will send the calendar to you thank you yuzhen and thank you yaga and thank every diamond
+[111:00] knights join this ai training session hope to see you soon in next session thank you thank you thank you
