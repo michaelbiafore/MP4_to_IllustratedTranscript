@@ -429,6 +429,21 @@ progressive-reveal duplicates, keeping the most-revealed frame in each run.
 /lecture-figs Input/Section8_recording.mp4
 ```
 
+#### `/cn-figures-to-eng <figure_path> [options]`
+Convert **a single figure containing Chinese text** (diagram, chart, table, flowchart,
+pyramid, flywheel, …) into a **similar figure with English replacing the Chinese**, meaning
+preserved. It reads the source, reconstructs the figure as portable inline **SVG** (system
+fonts, polygon arrowheads, no external deps), then rasterizes to **PNG** via Edge headless and
+prints copy-paste embeds (Markdown file-ref, portable base64 data-URI, HTML `<img>`) plus the
+editable SVG master. Options: `--out DIR`, `--width N`, `--scale N`, `--transparent`,
+`--title "…"`, `--svg-only`/`--png-only`. Reuses the renderer library in
+`scripts/_flywheel_figs.py`; see `Refs/Chinese_to_English_Figures.md` for the full
+technique.
+```
+/cn-figures-to-eng Input/evals_trilemma_cn.png
+/cn-figures-to-eng Input/roadmap_cn.png --scale 3 --transparent
+```
+
 ---
 
 ## End-to-End Examples

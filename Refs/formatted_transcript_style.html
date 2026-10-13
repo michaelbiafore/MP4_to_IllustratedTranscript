@@ -9,6 +9,11 @@
 --border: #e2e8f0;
 }
 html { scroll-behavior: smooth; }
+
+/* Pandoc's --metadata title block duplicates the document's own H1.
+   Keep the metadata (it supplies the browser-tab <title>) but hide the block. */
+header#title-block-header { display: none; }
+
 body {
 font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 color: var(--text);

@@ -12,6 +12,27 @@ This is a **content processing workflow** (not a traditional software project) t
 > complete command list (fetchers, formatters, slidifiers, collation macros, Discord tooling,
 > and slide/figure utilities).
 
+## Portability Mandate — ALL Generated HTML
+
+**Every `.html` file produced in this repo must be as portable as possible.** This applies to
+*all* HTML, no exceptions — slide decks in `Output/Slides/`, formatted documents in
+`Output/Formatted/`, and anything else generated anywhere in the repo.
+
+The test: the file must display **fully and correctly when it is the only file emailed to a
+remote system**, where required libraries may be in unknown locations, entirely unavailable, or
+offline. Assume **no network access**.
+
+Concretely, a finished HTML file must have **zero runtime external dependencies**:
+
+- **Inline all CSS and JS** — no CDN `<link>` / `<script src>`. For reveal.js decks, fetch
+  `reveal.css` / `reveal.js` (5.1.0) once from `cdn.jsdelivr.net`, then embed them in
+  `<style>` / `<script>` tags.
+- **Embed all images as base64 data URIs.**
+- **Use only system / web-safe font stacks** (e.g. `-apple-system, "Segoe UI", Roboto, ...`) —
+  no external web-font fetches.
+- **Verify:** confirm the file contains no fetched `http(s)://` references (inert URLs inside
+  license comments are fine).
+
 ## Three-Stage Pipeline
 
 ```
@@ -51,7 +72,7 @@ Slides are created manually by prompting with the formatted transcript plus two 
 - `Refs/Core Principles from _The Naked Presenter_01.md` — design philosophy (Garr Reynolds)
 - `Mandates/SlideFromMarkdown_PROMPT.md` — the prompt template
 
-**Technology**: reveal.js 5.1.0 via CDN (`cdn.jsdelivr.net`). Output is self-contained HTML with one `<section>` per slide.
+**Technology**: reveal.js 5.1.0, with the library's CSS and JS **inlined directly into the file** (fetched once from `cdn.jsdelivr.net`, then embedded — never left as `<link>`/`<script src>` CDN references). Output is one `<section>` per slide. See the [Portability Mandate](#portability-mandate--all-generated-html) — it applies here and to every other HTML file in the repo.
 
 **Design rules** (Naked Presenter):
 - Minimal text per slide; large numbers as visual anchors

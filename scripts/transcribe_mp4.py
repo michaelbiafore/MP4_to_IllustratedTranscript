@@ -43,6 +43,10 @@ def parse_args():
                         "Use large-v3 for max accuracy, or small/medium for speed.")
     p.add_argument("--language", default="en",
                    help="Spoken language code (default: en). Pass 'auto' to auto-detect.")
+    p.add_argument("--task", default="transcribe", choices=["transcribe", "translate"],
+                   help="Whisper task. 'transcribe' keeps the source language; "
+                        "'translate' renders the output in English (Whisper only translates "
+                        "TO English). Pair with --language <src> for a non-English source.")
     p.add_argument("--device", default="auto", choices=["auto", "cuda", "cpu"],
                    help="Compute device. Default auto: CUDA if available, else CPU.")
     p.add_argument("--compute-type", default="auto",
@@ -125,6 +129,7 @@ def main():
     segments, info = model.transcribe(
         audio_path,
         language=language,
+        task=args.task,
         vad_filter=not args.no_vad,
         beam_size=5,
     )
@@ -153,7 +158,7 @@ def main():
     print(f"Detected language: {getattr(info, 'language', args.language)} "
           f"(prob {getattr(info, 'language_probability', 0):.2f})")
     print(f"Duration ~{int(dur // 60)}m{int(dur % 60):02d}s, ~{words} words, "
-          f"model={args.model}, device={dev}")
+          f"model={args.model}, device={dev}, task={args.task}")
     print(f"JSON: {out_json}")
 
 
