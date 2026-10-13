@@ -9,6 +9,11 @@ Data files expected next to this script: cc-cedict.txt, hanzi_top3000.json
 """
 import json, os, re, sys
 
+# Windows consoles default to cp1252, which cannot encode the Chinese this
+# script prints; without this, every gloss ends in a UnicodeEncodeError.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 D = os.path.dirname(os.path.abspath(__file__))
 LINE = re.compile(r"^(\S+) (\S+) \[([^\]]*)\] /(.*)/$")
 
