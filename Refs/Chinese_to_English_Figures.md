@@ -12,6 +12,11 @@ The reusable renderer library is `scripts/_flywheel_figs.py`; the per-figure dat
 assembly for that particular article are archived in `examples/_flywheel_build.py`
 (git-ignored, local only).
 
+
+> **Companion note:** for translating the *speech* of a Mandarin recording — ASR error
+> classes, code-switching policy, the shared glossary — see
+> [`Chinese_Transcript_Translation.md`](Chinese_Transcript_Translation.md).
+
 ---
 
 ## 0. The core decision: reconstruct, don't edit
